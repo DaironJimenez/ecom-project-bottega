@@ -14,14 +14,14 @@ class SignInForm extends Component {
                 title='Email' 
                 placeholder='Email'
                 name='email' 
-                Component={FormInput} />
+                component={FormInput} />
 
                 <Field className='sign-in-form__password' 
                 type='password' 
                 title='Password' 
                 placeholder='Password'
                 name='password' 
-                Component={FormInput} />
+                component={FormInput} />
             </form>
         )
     }
