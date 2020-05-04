@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
@@ -34,3 +35,5 @@ function main() {
     </Provider>
     , document.querySelector('.app-wrapper'));
 }
+
+document.addEventListener('DOMContentLoaded', main);
