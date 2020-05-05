@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 export class FormInput extends Component {
     render() {
         const { className,title, type, placeholder, input } = this.props;
@@ -29,3 +30,4 @@ export class FormButton extends Component {
         )
     }
 }
+

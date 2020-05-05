@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Header from "../components/headernavbar/header"
 import Navbar from "../components/headernavbar/navbar"
 
+
+
 class Layout extends Component {
   render() {
     return (

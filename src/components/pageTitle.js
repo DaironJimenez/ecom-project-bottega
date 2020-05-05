@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 
-class pageTitle extends Component {
+class PageTitle extends Component {
     render() {
         const { className, title } = this.props; 
         return(
@@ -10,4 +10,4 @@ class pageTitle extends Component {
     }
 }
 
-export default pageTitle;
+export default PageTitle;
