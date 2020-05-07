@@ -10,7 +10,7 @@ import history from '../../history';
 class SignUpForm extends Component {
     render() {
         const { className, handleSubmit } = this.props;
-        const links = [
+        const info = [
             {
                 _id: 0,
                 title: 'At least 6 characters'
@@ -27,7 +27,7 @@ class SignUpForm extends Component {
         return (
             <form onSubmit={handleSubmit} className={`${className} sign-up-form`}>
 
-                <Field className='sign-in-form__name' 
+                <Field className='sign-up-form__name' 
                 type='name' 
                 title='Name' 
                 placeholder='Name'
@@ -48,7 +48,7 @@ class SignUpForm extends Component {
                 name='password'
                 component={FormInput}/>
 
-                <Field className='sign-in-form__confirm-password' 
+                <Field className='sign-up-form__confirm' 
                 type='password' 
                 title='Confirm Password' 
                 placeholder='Confirm Password'
@@ -70,7 +70,7 @@ class SignUpForm extends Component {
                 name='back'
                 short={true}
                 component={FormButton}/>
-                <Details className='sign-up-form__details' title='Password Requirements' links={links}/>
+                <Details className='sign-up-form__details' title='Password Requirements' info={info}/>
             </form>
         )
     }
