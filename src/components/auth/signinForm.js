@@ -38,6 +38,8 @@ class SignInForm extends Component {
         ]
         return (
             <form onSubmit={handleSubmit} className={`${className} sign-in-form`}>
+                
+
                 <Field className='sign-in-form__email' 
                 type='email' 
                 title='Email' 
@@ -60,6 +62,8 @@ class SignInForm extends Component {
                 title='Login'
                 name='login' 
                 component={FormButton} />
+
+                
                 <Details className='sign-in-form__details' title='QuickLinks' links={links}/>
 
             </form>
