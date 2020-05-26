@@ -1,27 +1,11 @@
 import {
     SET_HEADER_LINKS,
     SET_NAVBAR_LINKS
-} from '../actions/types';
+} from '../actions/type';
 
 const INITIAL_STATE = {
-    headerLinks: [
-        {
-            title : 'yooooo'
-        }, 
-        {
-            title: 'yoooooo'
-        }
-    ],
-    navbarLinks: [
-        {
-            title : 'account',
-            active: true
-        }, 
-        {
-            title: 'purchases',
-            active: false
-        }
-    ]
+    headerLinks: [],
+    navbarLinks: []
 }
 
 export default function(state = INITIAL_STATE, action) {
