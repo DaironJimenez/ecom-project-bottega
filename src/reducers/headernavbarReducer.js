@@ -4,13 +4,22 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = {
-    headerLinks: [],
-    navbarLinks: [
+    headerLinks: [
         {
-            title : 'account'
+            title : 'yooooo'
         }, 
         {
-            title: 'purchases'
+            title: 'yoooooo'
+        }
+    ],
+    navbarLinks: [
+        {
+            title : 'account',
+            active: true
+        }, 
+        {
+            title: 'purchases',
+            active: false
         }
     ]
 }
