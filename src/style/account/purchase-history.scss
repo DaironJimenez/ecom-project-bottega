@@ -1,7 +1,15 @@
 .purchase-history {
     grid-row: content-s/content-e;
     grid-column: s/e;
-    // &__page-title {
-        
-    // }
+    &__page-title {
+        border-bottom: 1px solid #cccccc;
+    }
+}
+
+.purchases {
+
+}
+
+.purchase-detail {
+
 }
