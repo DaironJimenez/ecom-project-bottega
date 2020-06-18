@@ -15,6 +15,7 @@ class Shop extends Component {
             }
         ]
         this.props.setHeaderLinks(headerLinks);
+        this.props.fetchShopCategories();
         // fetch shop products
     }
 
@@ -23,7 +24,6 @@ class Shop extends Component {
         return (
             <di className='shop'>
                 shop....
-
             </di>
         )
     }
