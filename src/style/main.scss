@@ -15,20 +15,22 @@ body {
     color: #808080;
 }
 
+
 @import 'layout';
-@import 'headernavbar'; 
 @import 'headernavbar';
+@import 'page-title';
+@import 'form-fields';
+@import 'details';
+
+// AUTH 
 @import 'auth/signin';
 @import 'auth/signup';
 
-@import 'page-title.scss';
-@import 'form-fields.scss';
-@import 'details';
+// ACCOUNT
+@import 'account/account';
+@import 'account/purchase-history';
+@import 'account/account-information';
 
-@import 'account/purchase-history.scss';
-@import 'account/account-information.scss';
-@import 'account/account.scss';
-
-//SHOP
-
-@import 'shop/shop.scss'
+// SHOP
+@import 'shop/shop';
+@import 'shop/shop-search-bar';
