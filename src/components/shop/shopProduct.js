@@ -29,4 +29,4 @@ class ShopProduct extends Component {
     }
 }
 
-export default ShopProduct;
+export default ShopProduct; 

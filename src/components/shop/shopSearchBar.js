@@ -27,4 +27,4 @@ ShopSearchBar = reduxForm({
     form: 'ShopSearchBar'
 })(ShopSearchBar);
 
-export default ShopSearchBar;
+export default ShopSearchBar; 

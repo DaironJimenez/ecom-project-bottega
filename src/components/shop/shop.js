@@ -5,6 +5,8 @@ import * as actions from '../../actions';
 import ShopSearchBar from './shopSearchBar';
 import ShopProduct from './shopProduct';
 
+
+
 class Shop extends Component {
 
     componentDidMount() {

@@ -9,7 +9,7 @@ const INITIAL_STATE = {
     categories: [],
     products: [],
     filteredProducts: []
-}
+} 
 
 export default function(state = INITIAL_STATE, action) {
     switch (action.type) {
@@ -43,7 +43,7 @@ export default function(state = INITIAL_STATE, action) {
                 }
             })
             return {
-                ...state,
+                state,
                 filteredProducts
             }
         default: return state;
