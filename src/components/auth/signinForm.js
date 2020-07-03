@@ -3,11 +3,9 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 
 import { FormInput, FormButton } from '../formFields';
-import Details from '../details'
+import Details from '../details';
 
 import history from '../../history';
-
-
 
 class SignInForm extends Component {
     render() {
@@ -16,56 +14,40 @@ class SignInForm extends Component {
             {
                 _id: 0,
                 title: 'Not registered? Create account here',
-                onclick: () => console.log('hey there')
-                
+                onClick: () => history.push('/signup')
             },
-
             {
                 _id: 1,
-                title: 'Forgot accounnt email?',
-                onclick: () => history.push('/signup')
-                
+                title: 'Forgot account email?',
+                onClick: () => console.log('forgot email')
             },
-
             {
                 _id: 2,
                 title: 'Forgot password?',
-                onclick: () => console.log('forgot password')
-                
+                onClick: () => console.log('forgot password')
             }
-
-            
         ]
         return (
             <form onSubmit={handleSubmit} className={`${className} sign-in-form`}>
-                
-
-                <Field className='sign-in-form__email' 
-                type='email' 
-                title='Email' 
+                <Field className='sign-in-form__email'
+                type='email'
+                title='Email'
                 placeholder='Email'
-                name='email' 
-                component={FormInput} />
-
-                <Field className='sign-in-form__password' 
-                type='password' 
-                title='Password' 
+                name='email'
+                component={FormInput}/>
+                <Field className='sign-in-form__password'
+                type='password'
+                title='Password'
                 placeholder='Password'
-                name='password' 
-                component={FormInput} />
-
+                name='password'
+                component={FormInput}/>
                 <div className='sign-in-form__line'></div>
-
-                <Field className='sign-in-form__login' 
-                onClick={() => history.push('/account')}
-                type='submit' 
+                <Field className='sign-in-form__login'
+                type='submit'
                 title='Login'
-                name='login' 
-                component={FormButton} />
-
-                
+                name='login'
+                component={FormButton}/>
                 <Details className='sign-in-form__details' title='QuickLinks' links={links}/>
-
             </form>
         )
     }
